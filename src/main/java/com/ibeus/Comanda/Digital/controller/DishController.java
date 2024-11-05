@@ -30,7 +30,7 @@ public class DishController {
     public Dish createDish(@RequestBody Dish dish) {
         return dishService.create(dish);
     }
-f
+
     @PutMapping("/{id}")
     public Dish updateDish(@PathVariable Long id, @RequestBody Dish dish) {
         return dishService.update(id, dish);
